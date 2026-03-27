@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wink &amp; Ink – Cape Town’s most exclusive lash &amp; brow studio. Luxury eyelash extensions, lash lifts, and bespoke beauty rituals.">
+    <title>Wink &amp; Ink • Luxury Lash &amp; Brow Studio | Cape Town</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Inter:wght@300;400;500&amp;display=swap');
+        
+        :root {
+            --gold: #d4af77;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0f0a0a 0%, #1a1212 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gold-glow {
+            text-shadow: 0 0 40px rgba(212, 175, 119, 0.6);
+        }
+
+        .service-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 30px 60px -15px rgb(212 175 119);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #d4af77;
+            transition: width 0.4s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-[#0a0808] text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-black/90 backdrop-blur-lg border-b border-[#d4af77]/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-4xl">✧</span>
+                <h1 class="heading-font text-3xl tracking-[3px] font-medium">WINK &amp; INK</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-10 text-sm font-medium tracking-widest">
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#experience" class="nav-link">THE EXPERIENCE</a>
+                <a href="#gallery" class="nav-link">GALLERY</a>
+                <a href="#journal" class="nav-link">JOURNAL</a>
+                <a href="#book" class="nav-link">BOOK NOW</a>
+            </div>
+
+            <a href="#book" class="px-9 py-4 border border-[#d4af77] text-[#d4af77] hover:bg-[#d4af77] hover:text-black font-medium rounded-full text-sm tracking-widest transition-all">
+                BOOK YOUR APPOINTMENT
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero-bg min-h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 text-[#d4af77] text-sm tracking-[2px] font-medium">
+                    CAPE TOWN • LUXURY LASH &amp; BROW STUDIO
+                </div>
+                
+                <h1 class="heading-font text-7xl md:text-8xl font-light leading-none tracking-[-2px] gold-glow">
+                    EVERY BLINK<br>IS A STATEMENT.
+                </h1>
+                
+                <p class="text-2xl text-gray-300 max-w-md">
+                    Bespoke eyelash extensions, lash lifts &amp; brow artistry.<br>
+                    Where precision meets pure elegance.
+                </p>
+                
+                <div class="flex items-center gap-6">
+                    <a href="#book" class="px-10 py-6 bg-[#d4af77] text-black font-medium text-lg rounded-3xl hover:scale-105 transition">
+                        RESERVE YOUR APPOINTMENT
+                    </a>
+                    <a href="#gallery" class="flex items-center gap-3 text-[#d4af77] hover:text-white transition">
+                        <span class="text-xl">View our work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 text-xs uppercase tracking-widest">
+                    <div>100% STERILE • MEDICAL-GRADE PRODUCTS</div>
+                    <div>PRIVATE SUITES • CAPE TOWN</div>
+                </div>
+            </div>
+
+            <!-- Hero visual -->
+            <div class="relative flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-12 bg-gradient-to-br from-[#d4af77] to-transparent opacity-20 blur-3xl rounded-[100px]"></div>
+                    <img src="https://picsum.photos/id/1011/800/900" 
+                         alt="Luxury lash extensions" 
+                         class="w-[420px] rounded-3xl shadow-2xl border border-[#d4af77]/30">
+                    <div class="absolute -bottom-6 -right-6 bg-black/80 backdrop-blur-xl px-6 py-4 rounded-2xl border border-[#d4af77]/30 text-sm">
+                        <span class="text-[#d4af77]">Signature Russian Volume</span><br>
+                        4–6 weeks retention
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-28 bg-black">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="heading-font text-center text-5xl font-light tracking-widest mb-4">Signature Services</h2>
+            <p class="text-center text-gray-400 text-lg mb-16">Handcrafted with precision and luxury</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-[#111] border border-[#d4af77]/10 rounded-3xl p-10">
+                    <div class="text-[#d4af77] text-6xl mb-8">✺</div>
+                    <h3 class="text-3xl font-light mb-3">Russian Volume Lashes</h3>
+                    <p class="text-gray-400">Ultra-light, dramatic volume for that perfect flutter. 3D–6D fans.</p>
+                    <div class="mt-10 text-[#d4af77] font-medium">From R1,650</div>
+                </div>
+                <div class="service-card bg-[#111] border border-[#d4af77]/10 rounded-3xl p-10">
+                    <div class="text-[#d4af77] text-6xl mb-8">✺</div>
+                    <h3 class="text-3xl font-light mb-3">Hybrid Lash Extensions</h3>
+                    <p class="text-gray-400">The perfect balance of volume and classic definition.</p>
+                    <div class="mt-10 text-[#d4af77] font-medium">From R1,350</div>
+                </div>
+                <div class="service-card bg-[#111] border border-[#d4af77]/10 rounded-3xl p-10">
+                    <div class="text-[#d4af77] text-6xl mb-8">✺</div>
+                    <h3 class="text-3xl font-light mb-3">Lash Lift + Tint</h3>
+                    <p class="text-gray-400">Natural lift and curl that lasts up to 8 weeks.</p>
+                    <div class="mt-10 text-[#d4af77] font-medium">From R950</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-28 bg-[#0a0808]">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <h2 class="heading-font text-5xl font-light mb-6">The Wink &amp; Ink Experience</h2>
+            <p class="max-w-2xl mx-auto text-gray-400">Private treatment rooms • Cashmere blankets • 24k gold eye masks • Signature scent journey</p>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-28 bg-black">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="heading-font text-center text-5xl font-light mb-16">Our Work</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://picsum.photos/id/1011/600/800" class="rounded-3xl aspect-[4/5] object-cover">
+                <img src="https://picsum.photos/id/1005/600/800" class="rounded-3xl aspect-[4/5] object-cover">
+                <img src="https://picsum.photos/id/1016/600/800" class="rounded-3xl aspect-[4/5] object-cover">
+                <img src="https://picsum.photos/id/1027/600/800" class="rounded-3xl aspect-[4/5] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="book" class="py-28 bg-gradient-to-br from-[#1a1212] to-black">
+        <div class="max-w-2xl mx-auto px-8">
+            <h2 class="heading-font text-center text-5xl font-light mb-8">Book Your Appointment</h2>
+            <div class="bg-white/5 backdrop-blur-3xl border border-[#d4af77]/20 rounded-3xl p-12">
+                <form id="bookingForm" class="space-y-8">
+                    <input type="text" placeholder="Your Name" class="w-full bg-transparent border-b border-[#d4af77]/30 pb-4 focus:outline-none text-lg">
+                    <input type="tel" placeholder="Phone / WhatsApp" class="w-full bg-transparent border-b border-[#d4af77]/30 pb-4 focus:outline-none text-lg">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="date" class="bg-transparent border-b border-[#d4af77]/30 pb-4 focus:outline-none text-lg">
+                        <select class="bg-transparent border-b border-[#d4af77]/30 pb-4 focus:outline-none text-lg">
+                            <option>Russian Volume Lashes</option>
+                            <option>Hybrid Lash Extensions</option>
+                            <option>Lash Lift + Tint</option>
+                            <option>Brow Lamination</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="submitBooking()" 
+                            class="w-full py-7 bg-[#d4af77] text-black text-xl font-medium rounded-3xl hover:bg-white transition">
+                        CONFIRM MY APPOINTMENT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-16 text-center border-t border-[#d4af77]/10">
+        <p class="heading-font text-3xl mb-2">WINK &amp; INK</p>
+        <p class="text-gray-400">Cape Town’s most exclusive lash &amp; brow studio</p>
+        <p class="text-xs text-gray-500 mt-12">© 2026 Wink &amp; Ink • Private Studio • By Appointment Only</p>
+    </footer>
+
+    <script>
+        function submitBooking() {
+            alert("✺ Thank you! Your appointment request has been received.\n\nOur concierge will contact you within 1 hour via WhatsApp.");
+        }
+        
+        console.log('%c✅ Wink & Ink luxury lash website loaded', 'color:#d4af77; font-size:18px');
+    </script>
+</body>
+</html>
